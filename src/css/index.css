@@ -1,0 +1,74 @@
+:root {
+	--primary-color: #056CF2;
+	--secondary-color: #045BCE;
+	--text-black: #121212;
+	--text-white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+.btn-icon:focus,
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active, 
+.form-control,
+.form-control:focus,
+.form-control:active {
+	position: relative;
+	border: 0;
+	outline: none;
+	box-shadow: none;
+}
+
+/* Botões */
+.my-btn-primary,
+.my-btn-secondary {
+	width: 7rem;
+	height: 2.5rem;
+	font-size: 1.13rem;
+}
+
+.my-btn-primary {
+	color: var(--text-white);
+	background-color: var(--primary-color);
+}
+
+.my-btn-primary:hover {
+	color: var(--text-white);
+	background-color: var(--secondary-color);
+}
+
+.my-btn-secondary {
+	color: var(--primary-color);
+	background-color: white;
+	border: 1px solid var(--primary-color);
+}
+
+.my-btn-secondary:hover {
+	color: var(--text-white);
+	background-color: var(--primary-color);
+}
+
+/* Textos */
+.my-text-primary {
+	color: var(--primary-color);
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.img-fluid {
+	height: 100%;
+}

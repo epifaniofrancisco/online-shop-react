@@ -1,0 +1,38 @@
+.list-inline-item {
+	transition: background-color 0.5s;
+}
+
+.list-inline-item a,
+footer p > a {
+	color: white;
+}
+
+footer p > a:hover {
+	color: white;
+}
+
+.list-inline-item:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+	border-color: var(--primary-color);
+}
+
+.list-inline-item {
+	width: 43px;
+	height: 43px;
+	font-size: 23px;
+	border: 1px solid;
+	border-radius: 3px;
+	line-height: 43px;
+	text-align: center;
+}
+
+
+footer h5 {
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+footer .underline-hover-effect:hover {
+	text-decoration: underline;
+}

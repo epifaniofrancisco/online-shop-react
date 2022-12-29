@@ -1,0 +1,35 @@
+.navbar .navbar-brand,
+.footer-brand {
+	font-weight: 700;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.navbar .navbar-brand:hover,
+.footer-brand:hover {
+	color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link {
+	font-size: 1.1rem;
+	color: var(--text-black);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+	color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active:hover {
+	color: var(--secondary-color);
+}
+
+.form-control {
+	border: 1px solid #ddd !important;
+}
+
+.form-control:focus,
+.form-control:active {
+	border: 1px solid var(--primary-color) !important;
+}
