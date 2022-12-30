@@ -1,37 +1,38 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
-import './index.css'
+import "./index.css";
 
-function ColMd2({title, link1, link2, link3}) {
-    var P = ({hr, text}) => {
-        return (
-            <p>
+function ColMd2({ title, link1, link2, link3 }) {
+	var P = ({ hr, text }) => {
+		return (
+			<p>
 				<a href={hr} className="underline-hover-effect">
 					{text}
 				</a>
 			</p>
-        )
-    }
+		);
+	};
 
 	return (
 		<Col md={2} className="mx-auto mt-3">
 			<h5 className="mb-4">{title}</h5>
-			<P hr="#who-we-are" text={link1}/>
-			<P hr="#time" text={link2}/>
-			<P hr="#products" text={link3}/>
+			<P hr="#who-we-are" text={link1} />
+			<P hr="#time" text={link2} />
+			<P hr="#products" text={link3} />
 		</Col>
 	);
 }
 
-function Footer() {
+function Footer({ setShow, size }) {
 	return (
 		<footer className="bg-dark text-white pt-5 pb-4">
 			<Container>
 				<Row className="text-center text-md-start">
 					<Col md={3} className="mx-auto mt-3">
-						<a href="" className="footer-brand h4">
+						<a href="" className="footer-brand h4" onClick={() => setShow(true)}>
 							Online Shop
 						</a>
 						<p className="fs-6 mt-4 text-md-justify who-we-are-text">
@@ -58,10 +59,15 @@ function Footer() {
 						</ul>
 					</Col>
 
-                    <ColMd2 title="Inicio" link1="Quem somos?" link2="Nosso time" link3="Produtos" />
+					<ColMd2
+						title="Inicio"
+						link1="Quem somos?"
+						link2="Nosso time"
+						link3="Produtos"
+					/>
 
 					<Col md={2} className="mx-auto mt-3">
-                    <h5 className="mb-4">Contactos</h5>
+						<h5 className="mb-4">Contactos</h5>
 						<address>
 							<p>
 								<a
@@ -88,10 +94,14 @@ function Footer() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center copyright">
 					<p className="text-light mt-4">
 						Copyright © 2022. Todos os direitos reservados
 					</p>
+					<div className="container cart" onClick={() => setShow(false)}>
+							<span><i className="fa-solid fa-cart-shopping"></i></span>
+							<span>{size}</span>
+					</div> 
 				</Row>
 			</Container>
 		</footer>

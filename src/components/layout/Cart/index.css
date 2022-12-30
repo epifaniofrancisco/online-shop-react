@@ -1,0 +1,40 @@
+.cart-section {
+	height: 100%;
+}
+
+.price {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-indent: 1rem;
+}
+
+.quantity {
+	width: 40%;
+}
+
+.quantity button {
+	width: 33.3333%;
+	height: 2rem;
+	color: var(--text-white);
+	background-color: var(--primary-color);
+	border: 1px solid;
+}
+
+.remove {
+	width: 6rem;
+	height: 2rem;
+	color: var(--text-white);
+	background-color: #e01e37;
+	border: 1px solid #e01e37;
+	border-radius: 3px;
+}
+
+.remove:hover {
+	color: var(--text-white);
+	background-color: #d01c34;
+}
+
+.total {
+	font-size: 2rem;
+	margin-top: 3rem;
+}

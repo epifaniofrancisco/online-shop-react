@@ -27,7 +27,6 @@ footer p > a:hover {
 	text-align: center;
 }
 
-
 footer h5 {
 	color: var(--primary-color);
 	text-transform: uppercase;
@@ -35,4 +34,47 @@ footer h5 {
 
 footer .underline-hover-effect:hover {
 	text-decoration: underline;
+}
+
+.cart {
+	position: fixed;
+	right: 5rem;
+	bottom: 2.1rem;
+	display: flex;
+	width: 53px;
+	height: 43px;
+	font-size: 22px;
+	line-height: 43px;
+	text-align: center;
+	color: var(--text-white);
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.cart span:nth-child(2) {
+	position: relative;
+	top: -24px;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+	font-weight: 600;
+	background-color: red;
+	border-radius: 2.5px;
+	padding: 0 3px;
+}
+
+.cart:hover {
+	color: var(--text-white);
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color) !important;
+}
+
+@media (max-width: 576px) {
+	.top {
+		bottom: 2.1rem;
+		right: 1.5rem;
+	}
 }
