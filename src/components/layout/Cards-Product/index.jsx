@@ -14,7 +14,7 @@ function Cards({ item, handleClick }) {
 				<Card.Body>
 					<Card.Title>{title}</Card.Title>
 					<Card.Text className="d-flex justify-content-between price-buy">
-						<span className="price">{price}</span>
+						<span className="price">{price} $</span>
 						<button
 							className="btn my-btn-primary"
 							onClick={() => handleClick(item)}

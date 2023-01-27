@@ -49,7 +49,7 @@ function Cart({ cart, setCart, handleChange }) {
 						</Card.Body>
 						<Row>
 							<Col md={6}>
-								<span className="price">{item.price} - RS</span>
+								<span className="price">{item.price} - $</span>
 							</Col>
 							<Col md={6}>
 								<button
@@ -64,7 +64,7 @@ function Cart({ cart, setCart, handleChange }) {
 				))}
 				<div className="total">
 					<span className="total__text">Total = </span>
-					<span >{price} RS</span>
+					<span >{price} $</span>
 				</div>
 
 				<button className="btn mt-4 my-btn-primary">Checkout</button>
