@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import './index.css'
+import playWithFriendsImage from "/src/assets/images/play-with-friends.jpg";
+import theBestGamesImage from "/src/assets/images/the-best-games.jpg";
+import playXboxImage from "/src/assets/images/play-xbox.jpg";
+import playWithYourLoImage from "/src/assets/images/play-with-you-lo.jpg";
 
 function ControlledCarousel() {
 	const [index, setIndex] = useState(0);
@@ -14,7 +18,7 @@ function ControlledCarousel() {
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="./src/assets/images/play-with-friends.jpg"
+					src={playWithFriendsImage}
 					alt="Jogue com amigos"
 				/>
 				<Carousel.Caption>
@@ -28,7 +32,7 @@ function ControlledCarousel() {
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="./src/assets/images/the-best-games.jpg"
+					src={theBestGamesImage}
 					alt="Second slide"
 				/>
 
@@ -43,7 +47,7 @@ function ControlledCarousel() {
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="./src/assets/images/play-xbox.jpg"
+					src={playXboxImage}
 					alt="Third slide"
 				/>
 
@@ -58,7 +62,7 @@ function ControlledCarousel() {
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="./src/assets/images/play-with-you-lo.jpg"
+					src={playWithYourLoImage}
 					alt="Um homem e uma mulher jogando"
 				/>
 

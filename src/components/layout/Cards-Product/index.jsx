@@ -1,6 +1,7 @@
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./index.css";
+import addImage from "/src/assets/icons/add-outline.svg";
 
 function Cards({ item, handleClick }) {
 	const { id, title, image, price } = item;
@@ -20,7 +21,7 @@ function Cards({ item, handleClick }) {
 							onClick={() => handleClick(item)}
 						>
 							<img
-								src="./src/assets/icons/add-outline.svg"
+								src={addImage}
 								alt="add outline icon"
 								className="img-fluid"
 							/>

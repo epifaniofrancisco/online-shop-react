@@ -4,6 +4,10 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import H2 from "./../../../components/layout/H2"
 
+import marcioImage from "/src/assets/images/man.jpg";
+import anaImage from "/src/assets/images/woman.jpg";
+import cristianoImage from "/src/assets/images/man1.jpg";
+
 function CardTime({ src, name, occupation }) {
 	return (
 		<Col md={3}>
@@ -29,17 +33,17 @@ function OurTime() {
 
 			<Row className="justify-content-between mt-5">
 				<CardTime
-					src="./src/assets/images/man.jpg"
+					src={marcioImage}
 					name="Márcio André"
 					occupation="Gestor de Vendas"
 				/>
 				<CardTime
-					src="./src/assets/images/woman.jpg"
+					src={anaImage}
 					name="Ana Maria"
 					occupation="Contabilista"
 				/>
 				<CardTime
-					src="./src/assets/images/man1.jpg"
+					src={cristianoImage}
 					name="Cristiano Sousa"
 					occupation="Gestor de Marketing"
 				/>

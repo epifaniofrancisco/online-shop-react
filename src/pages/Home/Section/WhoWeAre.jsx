@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import H2 from "./../../../components/layout/H2"
-
+import companyImage from "/src/assets/images/company.jpg"
 function WhoWeAre() {
 	return (
 		<section bg="light" className="p-5 who-we-are">
@@ -42,7 +42,7 @@ function WhoWeAre() {
 					</Col>
 					<Col md={6}>
 						<Image
-							src="src/assets/images/company.jpg"
+							src={companyImage}
 							alt="Imagem de vários computadores numa secretária e algumas pessoas mexendo neles"
 							className="img-fluid"
 						/>
